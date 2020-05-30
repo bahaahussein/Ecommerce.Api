@@ -15,25 +15,27 @@ namespace Ecommerce.Repository.UnitTests
         [Fact]
         public async Task GetUserById_ExistingUserId_ShouldReturnUser()
         {
+            long userIdTest = 1;
             var usersRepository = new UsersRepository(DbContext);
-            var existingUser = TestFactoryHelpers.CreateTestUser();
+            var existingUser = TestFactoryHelpers.CreateTestUser(userId: userIdTest);
             DbContext.Users.Add(existingUser);
             DbContext.SaveChanges();
 
-            var user = await usersRepository.GetUserById(1);
+            var user = await usersRepository.GetUserById(userIdTest);
 
-            Assert.Equal(existingUser.UserId, user.UserId);
+            Assert.Equal(userIdTest, user.UserId);
         }
 
         [Fact]
         public async Task GetUserById_NonExistingUserId_ShouldReturnNull()
         {
+            long userIdTest = 1;
             var usersRepository = new UsersRepository(DbContext);
-            var existingUser = TestFactoryHelpers.CreateTestUser();
+            var existingUser = TestFactoryHelpers.CreateTestUser(userId: userIdTest);
             DbContext.Users.Add(existingUser);
             DbContext.SaveChanges();
 
-            var user = await usersRepository.GetUserById(2);
+            var user = await usersRepository.GetUserById(userIdTest + 1);
 
             Assert.Null(user);
         }

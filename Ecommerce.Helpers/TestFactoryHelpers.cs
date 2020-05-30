@@ -10,11 +10,11 @@ namespace Ecommerce.Helpers
 {
     public static class TestFactoryHelpers
     {
-        public static User CreateTestUser(bool isDeleted = false, string emailAddress = "test@test.com")
+        public static User CreateTestUser(long userId = default(long), bool isDeleted = false, string emailAddress = "test@test.com")
         {
             return new User
             {
-                UserId = 1,
+                UserId = userId,
                 EmailAddress = emailAddress,
                 FirstName = "test",
                 LastName = "test",
