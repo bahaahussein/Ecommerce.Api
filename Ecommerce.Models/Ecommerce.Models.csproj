@@ -50,6 +50,8 @@
     <Compile Include="Enums\EServiceActionStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceResultModel.cs" />
+    <Compile Include="Settings\ContactInfo.cs" />
+    <Compile Include="Settings\Documentation.cs" />
     <Compile Include="Settings\SqlSettings.cs" />
     <Compile Include="SignInModel.cs" />
     <Compile Include="UserReturnModel.cs" />

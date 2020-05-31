@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 
 namespace Ecommerce.Api.Controllers
 {
+    [Route("api/[controller]/[action]")]
+    [ApiController]
     public abstract class MyControllerBase : ControllerBase
     {
         protected JsonResult ReturnResponse(EServiceActionStatus returnCode, object data = null, string message = null)
@@ -42,6 +44,7 @@ namespace Ecommerce.Api.Controllers
         }
 
         // for unit testing
+        [ApiExplorerSettings(IgnoreApi = true)] // for not seen in swagger
         public void AddTestErrorToModelState()
         {
             ModelState.AddModelError("test", "test");

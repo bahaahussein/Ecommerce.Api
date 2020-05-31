@@ -17,7 +17,7 @@ namespace Ecommerce.Api.Controllers
             _usersService = usersService;
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<JsonResult> GetUserById(long id)
         {
             var result = await _usersService.GetUserById(id);
