@@ -1,4 +1,4 @@
-﻿using Ecommerce.Entites.Sql;
+﻿using Ecommerce.Entities.Sql;
 using Ecommerce.Repository.Interfaces;
 using Ecommerce.SqlData;
 using Microsoft.EntityFrameworkCore;

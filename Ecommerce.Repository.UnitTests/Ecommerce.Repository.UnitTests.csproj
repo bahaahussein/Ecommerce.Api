@@ -17,9 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ecommerce.Helpers\Ecommerce.Helpers.csproj" />
+    <ProjectReference Include="..\Ecommerce.Entities\Ecommerce.Entities.csproj" />
+    <ProjectReference Include="..\ECommerce.Helpers\ECommerce.Helpers.csproj" />
     <ProjectReference Include="..\Ecommerce.Repository\Ecommerce.Repository.csproj" />
-    <ProjectReference Include="..\Ecommerce.SqlData\Ecommerce.SqlData.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ecommerce.Entites\Ecommerce.Entities.csproj" />
-    <ProjectReference Include="..\Ecommerce.Models\Ecommerce.Models.csproj" />
+    <ProjectReference Include="..\Ecommerce.Entities\Ecommerce.Entities.csproj" />
+    <ProjectReference Include="..\ECommerce.Models\ECommerce.Models.csproj" />
   </ItemGroup>
 
 </Project>

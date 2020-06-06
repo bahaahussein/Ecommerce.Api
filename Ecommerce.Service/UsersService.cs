@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Ecommerce.Entites.Sql;
+using Ecommerce.Entities.Sql;
 using Ecommerce.Models;
 using Ecommerce.Models.Enums;
 using Ecommerce.Repository.Interfaces;

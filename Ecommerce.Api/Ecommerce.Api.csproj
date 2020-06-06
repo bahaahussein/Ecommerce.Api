@@ -22,8 +22,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ecommerce.AutoMapper.Profiles\Ecommerce.AutoMapper.Profiles.csproj" />
-    <ProjectReference Include="..\Ecommerce.Helpers\Ecommerce.Helpers.csproj" />
-    <ProjectReference Include="..\Ecommerce.Models\Ecommerce.Models.csproj" />
+    <ProjectReference Include="..\ECommerce.Helpers\ECommerce.Helpers.csproj" />
+    <ProjectReference Include="..\ECommerce.Models\ECommerce.Models.csproj" />
     <ProjectReference Include="..\Ecommerce.Repository\Ecommerce.Repository.csproj" />
     <ProjectReference Include="..\Ecommerce.Service\Ecommerce.Service.csproj" />
     <ProjectReference Include="..\Ecommerce.SqlData\Ecommerce.SqlData.csproj" />

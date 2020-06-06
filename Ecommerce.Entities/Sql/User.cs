@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Ecommerce.Entites.Sql
+namespace Ecommerce.Entities.Sql
 {
     public class User
     {

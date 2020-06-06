@@ -1,4 +1,4 @@
-﻿using Ecommerce.Entites.Sql;
+﻿using Ecommerce.Entities.Sql;
 using Ecommerce.Models;
 
 namespace Ecommerce.AutoMapper.Profiles

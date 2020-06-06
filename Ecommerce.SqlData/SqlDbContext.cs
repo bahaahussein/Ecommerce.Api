@@ -1,5 +1,4 @@
-﻿using Ecommerce.Entites.Sql;
-using Ecommerce.Models.Settings;
+﻿using Ecommerce.Entities.Sql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System;

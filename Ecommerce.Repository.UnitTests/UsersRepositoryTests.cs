@@ -1,4 +1,4 @@
-using Ecommerce.Entites.Sql;
+using Ecommerce.Entities.Sql;
 using Ecommerce.Helpers;
 using Ecommerce.SqlData;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
