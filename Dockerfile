@@ -16,20 +16,22 @@ COPY Ecommerce.SqlData/*.csproj Ecommerce.SqlData/
 RUN dotnet restore
 COPY . .
 
-# testing
-FROM build AS testing
+# testing Api
+FROM build AS testingApi
 WORKDIR /src/Ecommerce.Api
 RUN dotnet build
 WORKDIR /src/ECommerce.Api.UnitTests
 RUN dotnet test
 
-FROM build AS testing1
+# testing Repository
+FROM build AS testingRepository
 WORKDIR /src/Ecommerce.Repository
 RUN dotnet build
 WORKDIR /src/Ecommerce.Repository.UnitTests
 RUN dotnet test
 
-FROM build AS testing2
+# testing Service
+FROM build AS testingService
 WORKDIR /src/Ecommerce.Service
 RUN dotnet build
 WORKDIR /src/ECommerce.Service.UnitTests
@@ -43,6 +45,6 @@ RUN dotnet publish -c Release -o /src/publish
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS runtime
 WORKDIR /app
 COPY --from=publish /src/publish .
-ENTRYPOINT ["dotnet", "Ecommerce.Api.dll"]
+# ENTRYPOINT ["dotnet", "Ecommerce.Api.dll"]
 # heroku uses the following
-# CMD ASPNETCORE_URLS=http://*:$PORT dotnet Colors.API.dll
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet Ecommerce.Api.dll
